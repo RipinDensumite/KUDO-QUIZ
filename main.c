@@ -6,6 +6,9 @@
 #define CLEAR "cls"
 #define Sleep(x) Sleep(x * 1000)
 #else
+#include <unistd.h>
+#define CLEAR "clear"
+#define Sleep(x) sleep(x)
 #endif
 
 void AdminPass();
